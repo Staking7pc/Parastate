@@ -1,0 +1,39 @@
+There are few steps that one must follow to run a node
+
+Step1:
+Choose either docker mode or manual mode
+Follow the instructions in the link below depending upon what you choose
+
+Step2:
+Expose 3 ports to public
+30333: Default p2p traffic port. Make sure you expose this port externally.
+9933: Default RPC traffic port.
+9944: Default WebSocket traffic port
+
+You can do this with command 
+
+sudo ufw allow 30333
+sudo ufw allow 9933
+sudo ufw allow 9944
+
+
+Step3:
+Generate the keys
+You will have to do this 2 times
+Have both of them handy
+
+Step4:
+Run the command to run the node as mentioned in the below link
+After you do this successfully, You can see your node in the telemetry portal
+https://telemetry.polkadot.io/#list/ParaState%20Testnet%202021-04-22
+
+
+Step5:
+Adding your keys to the parastate node
+You can find the instructions in the below link
+
+Step6: 
+For this you need the tokens to be sent by the parastate team
+Once you have the tokens you can request to be a set of validators
+
+https://github.com/ParaState/frontier/wiki/ParaState-Testnet-Node-Setup-Guideline
